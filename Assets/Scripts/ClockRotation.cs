@@ -8,7 +8,8 @@ public class ClockRotation : MonoBehaviour
 
     void Start() {
         LeanTween.delayedCall(3f, () => {
-            clockHand.LeanRotateAroundLocal(Vector3.forward, -360f, 2f).setEaseInOutBack();
+        clockHand.LeanRotateAroundLocal(Vector3.forward, -360f, 2f).setEaseInOutBack();
         }).setRepeat(-1);
     }
 }
+
